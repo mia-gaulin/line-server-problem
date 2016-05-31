@@ -17,16 +17,10 @@ end
 get '/lines' do
   content_type :json
 
-  @lines = File.open('public/100.txt')
+  @lines = File.open('public/1000.txt')
   @lines.each do |line|
-    l = line.split(",")
-    Line.create(:text => l[1])
+    Line.create(:text => line)
   end
-
-  # @lines = []
-  # File.foreach('public/1000.txt') do |line|
-  #   @lines << line
-  # end
 
   lines = Line.all
   lines.to_json
@@ -37,8 +31,7 @@ get '/lines/:id' do
 
   @lines = File.open('public/100.txt')
   @lines.each do |line|
-    l = line.split(",")
-    Line.create(:text => l[1])
+    Line.create(:text => line)
   end
 
   line = Line.get params[:id]

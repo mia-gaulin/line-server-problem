@@ -25,4 +25,4 @@ The next thing I'd like to get working would be to return the proper 413 status 
 I would also like to spend more time studying how to optimize my solution for different file sizes and different amounts of users, as well as understanding how it would work as is. It's something that wasn't really addressed during my time at Launch Academy and I'm very curious to find out more.
 
 **If you were to critique your code, what would you have to say about it?**
-This was one of my first forays into working with a RESTful API, and I'm still working to wrap my head around it properly. It seems to work pretty well, though I'd like to increase my understanding. The test files are also behaving oddly. When I run curl to pull all the lines, it only pulls some, rather than all. However, if I put a binding.pry in my code and cycle through, it does access each line of the text file.
+This was one of my first forays into working with a RESTful API, and I'm still working to wrap my head around it properly. It seems to work pretty well, though I'd like to increase my understanding. 
